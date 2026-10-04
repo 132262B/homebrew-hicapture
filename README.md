@@ -4,13 +4,11 @@
 
 # HiCapture
 
-**A screenshot and screen recording tool for macOS.**
+**A screenshot and screen recording tool.**
 
-Press a shortcut, the screen freezes, drag — the image, or the text inside it,
-is already on your clipboard. Press another and you are recording, with an editor
-waiting when you stop.
+Features, guides and pricing are on the website:
 
-macOS 14+ · Apple Silicon & Intel · light & dark · 10 languages
+### [hi-capture.com](https://hi-capture.com)
 
 **English** · [한국어](README.ko.md)
 
@@ -22,159 +20,13 @@ macOS 14+ · Apple Silicon & Intel · light & dark · 10 languages
 brew tap 132262b/hicapture && brew trust 132262b/hicapture && brew install --cask hicapture
 ```
 
-One line — paste it and you are done. The `brew trust` in the middle is the confirmation
-Homebrew asks for on third-party taps.
-
-<img src="images/editor.png" alt="The HiCapture editor, marking up a screenshot with an arrow, a highlighter and a blur" width="880">
-
-## Catch the moment
-
-Press the shortcut and you select right on the live screen. Turn on **Freeze screen** in
-Settings → Capture and the picture holds still from the instant you pressed — a video
-mid-frame, an open menu, a tooltip that disappears the moment you look away, all of it
-stays exactly as you saw it.
-
-|                     |                                                                                  |
-| ------------------- | -------------------------------------------------------------------------------- |
-| **Area**            | Drag exactly what you want. `Space` moves the selection, arrow keys nudge it 1 px |
-| **Full screen**     | The whole display under the cursor                                               |
-| **Window**          | Hover and the border snaps to the window; click to take it                       |
-| **Pinned area**     | Leave a frame on screen and take the same spot on every press; outside dims, app still usable |
-| **Screen recording** | The red button on the same frame. One window if you like; sound and mic optional — the editor opens |
-| **Color picker**    | Magnify down to the pixel and copy its `#RRGGBB`                                  |
-| **Text extraction** | Read the text inside a dragged area straight into the clipboard                  |
-| **Draw on screen**  | Pen, arrows and shapes over the screen while you teach; click through to the app underneath |
-
-## Text you can't select
-
-Drag over any text on screen and it arrives on your clipboard as text — a screenshot a
-colleague sent you, an error dialog that won't let you copy, a scanned PDF, a paused frame
-of a video.
-
-<img src="images/ocr.png" alt="Dragging over a block of text in the HiCapture settings window to extract it" width="700">
-
-## Leave a frame, capture it, record it
-
-Press `⌘⇧⌥R` and a frame appears. Like the system screenshot tool, everything outside it
-dims and only the frame stays bright. Grab the band around it or the bar to move it, drag a
-corner to resize, and every press of the blue button (or `↩`) captures that spot. The
-inside of the frame is empty, so the app underneath keeps working — handy when the same
-spot keeps changing and you want it again and again.
-
-<img src="images/pinned.png" alt="The HiCapture pinned frame: a bright area in the middle of a dimmed screen, with the shutter and record bar below" width="700">
-
-The red button on the same frame (or `R`) records. The display button on the
-bar fills the whole screen, the window button lets you click one window to record just
-that. When recording starts the dimming lifts, the border turns red and the bar shows the
-time. Press once more to stop. Whatever is under the frame keeps working while you record.
-
-Sound goes in with the picture when you want it. Settings → Recording has switches for
-system sound (whatever plays through the speakers) and the microphone (macOS 15 and
-later), each written as its own track so you can balance them afterwards. The cursor is
-not burned into the video — HiCapture logs where it went and what it clicked, and the
-editor redraws it.
-
-<img src="images/video-editor.png" alt="The HiCapture video editor: a recording on a wallpaper background, zoom segments and clips on the timeline, waveform lanes below" width="880">
-
-## Then make it look good
-
-Stop a recording and the dark video editor opens. Wherever you clicked, the picture zooms
-in for a moment and follows your cursor; the cursor itself is redrawn smoothly with a
-ripple on every click. Put the same wallpaper, gradient or solid background behind it as
-a screenshot — dozens of presets, or your own image. The video is a clip on the timeline:
-split it at the playhead (`C`), delete pieces, trim edges, and give each clip its own
-speed from 0.5× to 3×. Screen, system sound and mic sit on separate layers with waveforms
-and per-track volume. Export as MP4 (H.264 or HEVC), WebM or GIF at the original size,
-1080p or 720p, 30 or 60 fps.
-
-That drag put exactly this on the clipboard:
-
-```
-Area capture
-Drag to crop exactly what you want.
-Full screen capture
-Captures the entire display under the cursor.
-Window capture
-Hover to snap to a window, click to capture it.
-Color picker
-Picks a pixel color and copies its #RRGGBB code.
-Text extraction
-Reads the text in a dragged area into the clipboard.
-```
-
-Line breaks are kept in reading order. It runs on the same recognizer macOS uses for Live
-Text, so there is no model to download and nothing leaves your Mac. Korean and English are
-recognized out of the box, and other languages are detected automatically.
-
-## Pick a color from anywhere
-
-Magnify down to the pixel and the `#RRGGBB` lands on your clipboard. The magnifier follows
-the cursor across every display.
-
-<img src="images/picker.png" alt="The color picker magnifier showing a pixel grid and the hex code 0B84FF" width="350">
-
-## One shortcut for all of them
-
-Tap `⌘⇧⌥Q` and the wheel opens where your cursor is. Aim, let go, it runs.
-
-<img src="images/quickslot.png" alt="The quickslot wheel with the capture modes" width="380">
-
-## From capture to markup, without a break
-
-Every capture lands on the clipboard first, so you can paste it immediately. Click the
-preview in the bottom-right corner and it opens straight into the editor.
-
-Pen, highlighter, shapes, arrows, text, mosaic, blur and crop — each one key away.
-`⌘S` saves to your folder, `⌘C` copies. The background button opens a side panel that
-sets the shot on a wallpaper, gradient, solid color or your own image — with padding,
-rounded corners, shadow and aspect ratios like 16:9 or 1:1, ready to share.
-
-| Tool      | Key | Tool      | Key |
-| --------- | --- | --------- | --- |
-| Select    | V   | Text      | T   |
-| Crop      | C   | Mosaic    | M   |
-| Rectangle | R   | Blur      | B   |
-| Ellipse   | O   | Highlight | H   |
-| Arrow     | A   | Pen       | P   |
-
-## Make it yours
-
-<img src="images/shortcuts.png" alt="The Shortcuts tab in HiCapture settings" width="700">
-
-Every shortcut is yours to change, and you can switch them off one by one or all at once
-from the menu bar — handy when another app wants the same combination. The defaults stay
-clear of the built-in macOS screenshot keys (`⌘⇧3/4/5`).
-
-<img src="images/settings.png" alt="The General tab in HiCapture settings" width="700">
-
-Save as PNG, JPEG or WebP with a quality slider, pick where files land, decide whether the
-preview appears and how long it stays, freeze the screen while you select, open at login,
-and update from inside the app. Right-click any image in Finder → **Open With → HiCapture**
-to edit it on the spot.
-
-| Action           | Default |
-| ---------------- | ------- |
-| Area capture     | ⌘⇧⌥A    |
-| Full screen      | ⌘⇧⌥F    |
-| Window capture   | ⌘⇧⌥W    |
-| Pinned area      | ⌘⇧⌥R    |
-| Color picker     | ⌘⇧⌥C    |
-| Text extraction  | ⌘⇧⌥T    |
-| Draw on screen   | ⌘⇧⌥D    |
-| Quickslot wheel  | ⌘⇧⌥Q    |
+Or download it from [hi-capture.com](https://hi-capture.com). Requires macOS 14 or later.
 
 ## Update and uninstall
 
 ```bash
-brew update && brew upgrade --cask hicapture     # or press Update in Settings
+brew update && brew upgrade --cask hicapture
 brew uninstall --cask hicapture
 ```
 
-## About the install
-
-HiCapture is signed with a Developer ID and notarized by Apple, so it opens right after
-installing. Everything the install does is right there in
-[Casks/hicapture.rb](Casks/hicapture.rb), in plain sight.
-
-This repository holds the cask and the release builds. The source lives in a private
-repository.
+This repository holds the cask ([Casks/hicapture.rb](Casks/hicapture.rb)) and the release builds.
