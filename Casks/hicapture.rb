@@ -28,16 +28,6 @@ cask "hicapture" do
   ]
 
   caveats <<~EOS
-    On first launch HiCapture asks for the Screen Recording permission. Allow it,
-    then press "Restart" in the window: macOS applies this permission the next
-    time the app starts.
-
-    To update:
-
-      brew update && brew upgrade --cask hicapture
-
-    The running version is shown in the bottom-left corner of the Settings window.
-    If the number does not change after an upgrade, the old process is still
-    running. Quit HiCapture completely and open it again.
+    On first launch, allow Screen Recording when asked, then press "Restart".
   EOS
 end
