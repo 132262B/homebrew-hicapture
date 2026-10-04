@@ -2,10 +2,15 @@ cask "hicapture" do
   version "1.0.0"
   sha256 "600963b556d8c17d0669692e9dfc2aec220bc919040e305485c361e253543e2f"
 
-  url "https://github.com/132262B/homebrew-hicapture/releases/download/v#{version}/hicapture-#{version}-macos.zip"
+  url "https://hi-capture.com/assets/releases/hicapture-#{version}-macos.zip"
   name "HiCapture"
   desc "Screenshot tool with region capture, annotation editor and color picker"
   homepage "https://hi-capture.com/"
+
+  livecheck do
+    url "https://hi-capture.com/en"
+    regex(/href=.*?hicapture[._-]v?(\d+(?:\.\d+)+)[._-]macos\.zip/i)
+  end
 
   depends_on macos: :sonoma
 
