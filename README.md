@@ -63,7 +63,7 @@ spot keeps changing and you want it again and again.
 
 <img src="images/pinned.png" alt="The HiCapture pinned frame: a bright area in the middle of a dimmed screen, with the shutter and record bar below" width="700">
 
-The red button on the same frame (or `R`, or `⌘⇧⌥V`) records. The display button on the
+The red button on the same frame (or `R`) records. The display button on the
 bar fills the whole screen, the window button lets you click one window to record just
 that. When recording starts the dimming lifts, the border turns red and the bar shows the
 time. Press once more to stop. Whatever is under the frame keeps working while you record.
@@ -115,7 +115,7 @@ the cursor across every display.
 
 ## One shortcut for all of them
 
-Tap `⌘⇧⌥S` and the wheel opens where your cursor is. Aim, let go, it runs.
+Tap `⌘⇧⌥Q` and the wheel opens where your cursor is. Aim, let go, it runs.
 
 <img src="images/quickslot.png" alt="The quickslot wheel with the capture modes" width="380">
 
@@ -172,9 +172,8 @@ brew uninstall --cask hicapture
 
 ## About the install
 
-HiCapture is not notarized by Apple, so the cask removes the Gatekeeper quarantine attribute
-after installing — without it macOS refuses to open the app at all. That also means it
-cannot go into the official homebrew-cask. Everything the install does is right there in
+HiCapture is signed with a Developer ID and notarized by Apple, so it opens right after
+installing. Everything the install does is right there in
 [Casks/hicapture.rb](Casks/hicapture.rb), in plain sight.
 
 This repository holds the cask and the release builds. The source lives in a private

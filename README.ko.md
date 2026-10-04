@@ -60,7 +60,7 @@ brew tap 132262b/hicapture && brew trust --cask 132262b/hicapture/hicapture && b
 
 <img src="images/pinned.png" alt="HiCapture 고정 영역 틀 — 어두워진 화면 가운데 밝게 남은 영역과, 아래의 셔터·녹화 버튼 막대" width="700">
 
-같은 틀의 빨간 버튼(또는 `R`, `⌘⇧⌥V`)은 녹화입니다. 막대의 디스플레이 버튼은 화면
+같은 틀의 빨간 버튼(또는 `R`)은 녹화입니다. 막대의 디스플레이 버튼은 화면
 전체를, 창 버튼은 클릭한 창 하나만 잡습니다. 시작되면 어둠이 걷히고 테두리가 빨개지며
 막대에 시간이 흐릅니다. 한 번 더 누르면 멈춥니다. 녹화하는 동안에도 틀 아래 앱은
 그대로 쓸 수 있습니다.
@@ -110,7 +110,7 @@ brew tap 132262b/hicapture && brew trust --cask 132262b/hicapture/hicapture && b
 
 ## 단축키 하나로 여섯 가지 전부
 
-`⌘⇧⌥S` 를 톡 누르면 커서 자리에 휠이 열립니다. 조준하고 떼면 그대로 실행됩니다.
+`⌘⇧⌥Q` 를 톡 누르면 커서 자리에 휠이 열립니다. 조준하고 떼면 그대로 실행됩니다.
 
 <img src="images/quickslot-ko.png" alt="캡처 모드가 놓인 퀵슬롯 휠" width="380">
 
@@ -167,9 +167,7 @@ brew uninstall --cask hicapture
 
 ## 설치에 대해
 
-HiCapture 는 Apple 공증(notarization)을 받지 않아서, cask 가 설치 후 Gatekeeper 격리
-속성을 떼어 냅니다 — 떼지 않으면 macOS 가 앱을 아예 열지 않습니다. 같은 이유로 공식
-homebrew-cask 에는 올릴 수 없습니다. 설치가 무엇을 하는지는
-[Casks/hicapture.rb](Casks/hicapture.rb) 에서 그대로 보실 수 있습니다.
+HiCapture 는 Developer ID 로 서명하고 Apple 공증(notarization)을 받은 앱이라, 설치한 그대로
+열립니다. 설치가 무엇을 하는지는 [Casks/hicapture.rb](Casks/hicapture.rb) 에서 그대로 보실 수 있습니다.
 
 이 저장소에는 cask 와 릴리스 빌드가 있습니다. 소스는 비공개 저장소에 있습니다.
