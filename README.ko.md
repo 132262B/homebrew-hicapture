@@ -19,7 +19,7 @@ macOS 14 이상 · Apple Silicon / Intel · 라이트·다크 · 10개 언어
 ## 설치
 
 ```bash
-brew tap 132262b/hicapture && brew trust --cask 132262b/hicapture/hicapture && brew install --cask hicapture
+brew tap 132262b/hicapture && brew trust 132262b/hicapture && brew install --cask hicapture
 ```
 
 한 줄이라 그대로 붙여넣으면 끝납니다. 가운데 `brew trust` 는 Homebrew 가 서드파티

@@ -19,7 +19,7 @@ macOS 14+ · Apple Silicon & Intel · light & dark · 10 languages
 ## Install
 
 ```bash
-brew tap 132262b/hicapture && brew trust --cask 132262b/hicapture/hicapture && brew install --cask hicapture
+brew tap 132262b/hicapture && brew trust 132262b/hicapture && brew install --cask hicapture
 ```
 
 One line — paste it and you are done. The `brew trust` in the middle is the confirmation
