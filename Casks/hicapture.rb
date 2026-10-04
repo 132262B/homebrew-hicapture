@@ -5,7 +5,7 @@ cask "hicapture" do
   url "https://github.com/132262B/homebrew-hicapture/releases/download/v#{version}/hicapture-#{version}-macos.zip"
   name "HiCapture"
   desc "Screenshot tool with region capture, annotation editor and color picker"
-  homepage "https://hi-capture.com"
+  homepage "https://hi-capture.com/"
 
   depends_on macos: :sonoma
 
@@ -28,15 +28,16 @@ cask "hicapture" do
   ]
 
   caveats <<~EOS
-    처음 실행하면 화면 기록 권한을 요청합니다. 허용한 뒤 창의 '다시 시작' 을
-    누르면 적용됩니다. macOS 는 앱이 새로 실행될 때 이 권한을 반영합니다.
+    On first launch HiCapture asks for the Screen Recording permission. Allow it,
+    then press "Restart" in the window: macOS applies this permission the next
+    time the app starts.
 
-    업데이트는 이렇게 합니다.
+    To update:
 
       brew update && brew upgrade --cask hicapture
 
-    지금 돌고 있는 버전은 설정 창 왼쪽 아래에 적혀 있습니다. 업그레이드했는데
-    그 숫자가 그대로면 예전 프로세스가 아직 떠 있는 것이니, HiCapture 를 완전히
-    끄고 다시 실행해 주세요.
+    The running version is shown in the bottom-left corner of the Settings window.
+    If the number does not change after an upgrade, the old process is still
+    running. Quit HiCapture completely and open it again.
   EOS
 end
