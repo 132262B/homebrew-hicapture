@@ -1,6 +1,6 @@
 cask "hicapture" do
-  version "1.0.6"
-  sha256 "06302e26713bbdaa1e1c73e18ecb315bc69afc4fea3bab8f37891a3de710980a"
+  version "1.0.7"
+  sha256 "09f76742f7762518016e2535f11cb834759488f0ff967671324f63fb34734037"
 
   url "https://hi-capture.com/assets/releases/hicapture-#{version}-macos.zip"
   name "HiCapture"
